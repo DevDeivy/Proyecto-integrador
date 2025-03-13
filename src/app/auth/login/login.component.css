@@ -7,10 +7,10 @@
 .wrapper-content{
     display: flex;
     align-items: center;
-    border: 1px solid gray;
+    border: 1px rgba(0, 0, 0, .3) solid ;
     border-radius: .5rem;
-    width: 80rem;
-    height: 60rem;
+    width: 95rem;
+    height: 55rem;
 }
 
 .img{
@@ -70,6 +70,7 @@ input:focus{
     background: linear-gradient(to right, #00ff2f, #00cf26, #00ad20, #01bd24, #02d92a,  #00ff2f);
     background-size: 300% 100%;
     animation: colorLinear 5s linear infinite;
+    color: white;
 }
 @keyframes colorLinear {
     0% {
