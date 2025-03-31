@@ -1,0 +1,109 @@
+/* Reset de estilos y configuración general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.register-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sección de la imagen */
+.register-image {
+  width: 50%;
+  background-image: url('../../../../../public/img/trigo.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+/* Sección del formulario */
+.register-form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Caja del formulario */
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Opciones de registro */
+.register-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.register-options a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #00ff2f, #00cf26, #00ad20, #01bd24, #02d92a, #00ff2f);
+  background-size: 300% 100%;
+  animation: colorLinear 5s linear infinite;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes colorLinear {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 300% 50%;
+  }
+}
+
+.login {
+  margin: 2rem;
+  text-align: center;
+}
+.login a {
+  text-decoration: none;
+  color: #007bff;
+}
