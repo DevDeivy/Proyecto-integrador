@@ -1,26 +1,15 @@
-/* Reset de estilos y configuración general */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* Contenedor principal */
 .register-container {
   display: flex;
   height: 100vh;
 }
 
-/* Sección de la imagen */
 .register-image {
   width: 50%;
-  background-image: url('../../../../../public/img/trigo.jpg'); 
+  background-image: url('/img/trigo.jpg'); 
   background-size: cover;
   background-position: center;
 }
 
-/* Sección del formulario */
 .register-form {
   width: 50%;
   display: flex;
@@ -30,7 +19,6 @@
   background: #f9f9f9;
 }
 
-/* Caja del formulario */
 .form-box {
   width: 100%;
   max-width: 400px;
@@ -40,7 +28,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos del formulario */
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -65,7 +52,6 @@ h2 {
   border-radius: 5px;
 }
 
-/* Opciones de registro */
 .register-options {
   display: flex;
   justify-content: space-between;

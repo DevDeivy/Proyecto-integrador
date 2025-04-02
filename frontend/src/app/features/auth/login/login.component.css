@@ -1,108 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Contenedor principal */
-  .login-container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  /* Sección de la imagen */
-  .login-image {
-    width: 50%;
-    background-image: url('../../../../../public/img/trigo.jpg'); 
-    background-size: cover;
-    background-position: center;
-  }
-  
-  /* Sección del formulario */
-  .login-form {
-    width: 50%;
+  .wrapper{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background: #f9f9f9;
+    gap: 9rem;
+    height: 100vh;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    background: #8dffb38d;
+    padding: 3rem;
+    height: 45rem;
+    width: 40rem;
+    border-radius: 1rem;
+    border: .1rem solid #000;
   }
   
-  /* Caja del formulario */
-  .form-box {
-    width: 100%;
-    max-width: 400px;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .login-image {
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    padding: 3rem;
+    border-radius: 4rem;
   }
   
-  /* Estilos del formulario */
   h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #000;
   }
   
-  .input-group {
-    margin-bottom: 15px;
+  .login-container-form {
+    display: grid;
+    gap: 2rem;
   }
   
   .input-group label {
     display: block;
     font-size: 14px;
     margin-bottom: 5px;
-    color: #555;
+    color: #000;
   }
   
   .input-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: .1rem solid #000;
     border-radius: 5px;
   }
-  
-  /* Opciones de login */
-  .login-options {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  
-  .login-options a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
+    
   .login-button {
+    background-color: white;
+    border: .1rem solid #000;
     width: 100%;
     padding: 10px;
-    background: linear-gradient(to right, #00ff2f, #00cf26, #00ad20, #01bd24, #02d92a,  #00ff2f);
-    background-size: 300% 100%;
-    animation: colorLinear 5s linear infinite;
-    color: white;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-
-  @keyframes colorLinear {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 300% 50%;
-    }
 }
 
-  .register{
-    margin: 2rem;
-    text-align: center;
-  }
-.register a{
-        text-decoration: none;
-        color: #007bff;
+.register{
+  padding: 2rem;
+}
+
+.remember{
+  accent-color: #000;
+}
+
+.login-options{
+  display: flex;
+  gap: 4rem;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #ccc;
+  margin: 0 10px;
 }

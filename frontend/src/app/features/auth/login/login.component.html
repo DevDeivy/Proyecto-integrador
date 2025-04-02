@@ -1,13 +1,9 @@
-<section class="login-container">
-    <!-- Sección de la imagen de inicio de sesión -->
-    <div class="login-image" aria-hidden="true"></div>
-  
-    <!-- Sección del formulario -->
-    <main class="login-form">
-        <article class="form-box">
+<main class="wrapper">
+    <img src="assets/img/trigo.jpg" alt="logo" class="login-image">
+    
+    <section class="login-container">
             <h2>Iniciar sesión</h2>
-  
-            <form>
+            <form class="login-container-form">
                 <div class="input-group">
                     <label for="email">Correo electrónico</label>
                     <input type="email" id="email" placeholder="Ingresa tu correo" required>
@@ -19,17 +15,18 @@
                 </div>
   
                 <div class="login-options">
-                    <label>
-                        <input type="checkbox"> Recordarme
-                    </label>
+                    <div>
+                        <input type="checkbox" class="remember"> Recordarme
+                    </div>
                     <a href="#">¿Olvidaste tu contraseña?</a>
                 </div>
   
                 <button type="submit" class="login-button">Iniciar sesión</button>
-                <div class="register">
-                    <a href="register">¿Todavía no tienes una cuenta? Regístrate</a>
+                <div class="or">
+                    <span>O inicia</span>
                 </div>
+                <p>iconos de google, apple y facebook</p>
+                
             </form>
-        </article>
-    </main>
-  </section>
+    </section>
+</main>
