@@ -20,5 +20,4 @@ public class UserValidations {
         return userRepository.findByEmail(email).isPresent();
     }
 
-
 }
