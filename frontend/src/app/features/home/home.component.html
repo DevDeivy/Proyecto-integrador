@@ -3,12 +3,12 @@
         <img src="assets/img/logo.png" alt="logo culti" class="logoculti">
         <div class="nav-container">
             <ul class="nav-container-ul">
-                <li class="nav-container-li"><a href="#">Inicio</a></li>
-                <li class="nav-container-li"><a href="#about">Sobre nosotros</a></li>
-                <li class="nav-container-li"><a href="#products">Productos</a></li>
+                <li class="nav-container-li"><a [routerLink]="['/home']">Inicio</a></li>
+                <li class="nav-container-li"><a [routerLink]="['/home']">Sobre nosotros</a></li>
+                <li class="nav-container-li"><a [routerLink]="['/home']">Productos</a></li>
             </ul>
-            <a href="/login" class="login-btn">Iniciar sesión</a>
-            <a href="/register" class="login-btn">Registrate</a>
+            <a [routerLink]="['/login']" class="login-btn">Iniciar sesión</a>
+            <a [routerLink]="['/register']" class="login-btn">Registrate</a>
         </div>
     </nav>
 </header>
