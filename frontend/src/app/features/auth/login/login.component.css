@@ -1,11 +1,16 @@
 .wrapper {
   display: flex;
-  align-items: center;
-  gap: 9rem;
   height: 100vh;
 }
 
 .login-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
   display: flex;
   flex-direction: column;
   background: #8dffb38d;
@@ -33,13 +38,13 @@ h2 {
 
 .login-container-form {
   display: grid;
-  gap: 2rem;
+  gap: 1.3rem;
 }
 
 .input-group label {
   display: block;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: .5rem;
   color: #000;
 }
 
@@ -109,4 +114,15 @@ h2 {
 .icons svg {
   width: 2rem;
   height: 2rem;
+}
+
+.login {
+  text-align: center;
+}
+
+.err{
+  font-size: 1.3rem;
+  text-align: center;
+  color: red;
+  margin-top: .2rem;
 }

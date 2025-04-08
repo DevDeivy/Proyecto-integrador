@@ -3,18 +3,18 @@
   height: 100vh;
 }
 
-.gap{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.gap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .register-image {
-    width: 60%;
-    background-size: cover;
-    background-position: center center;
-    padding: 3rem;
-    border-radius: 4rem;
+  width: 60%;
+  background-size: cover;
+  background-position: center center;
+  padding: 3rem;
+  border-radius: 4rem;
 }
 
 .register-form {
@@ -25,14 +25,14 @@
 }
 
 .form-box {
-    display: flex;
-    flex-direction: column;
-    background: #8dffb38d;
-    padding: 3rem;
-    height: 45rem;
-    width: 40rem;
-    border-radius: 1rem;
-    border: .1rem solid #000;
+  display: flex;
+  flex-direction: column;
+  background: #8dffb38d;
+  padding: 3rem;
+  height: 45rem;
+  width: 40rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #000;
 }
 
 h2 {
@@ -53,12 +53,13 @@ h2 {
 }
 
 .register-button {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem;
-  border: .1rem solid #000;
-  border-radius: .5rem;
+  border: 0.1rem solid #000;
+  border-radius: 0.5rem;
+  width: 100%;
 }
 
-.login{
+.login {
   text-align: center;
 }

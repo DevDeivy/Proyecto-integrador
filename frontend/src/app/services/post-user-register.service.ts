@@ -9,11 +9,17 @@ import { Observable } from 'rxjs';
 export class PostUserRegisterService {
 
   public url: string = Api.PostRegister;
+  public urlLogin: string = Api.PostLogin;
   
   constructor(private http: HttpClient) {}
 
-  post(payload: any): Observable<any> {
+  RegisterUser(payload: any): Observable<any> {
     return this.http.post(this.url, payload);  
   }
 
+  LoginUser(payload: any): Observable<any>{
+    return this.http.post(this.urlLogin, payload,{
+      responseType: 'text'
+    });
+  }
 }
