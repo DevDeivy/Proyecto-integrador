@@ -1,9 +1,14 @@
 package culti.authentication.controllers;
 
 import culti.authentication.application.security.JwtUtil;
-import culti.authentication.domain.model.User;
-import culti.authentication.infrastructure.repository.UserRepository;
+import culti.authentication.model.User;
+import culti.authentication.repository.UserRepository;
 import lombok.AllArgsConstructor;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -36,18 +41,24 @@ public class AuthController {
         return util.generateToken(userDetails.getUsername());
     }
 
-    @PostMapping("/signup")
-    public String registerUser(@RequestBody User user){
-        if (userRepository.existsByEmail(user.getEmail())){
-            return "Error: Username is already taken!";
-        }
 
-        User newUser = new User(
-                user.getEmail(),
-                encoder.encode(user.getPassword())
-        );
-        userRepository.save(newUser);
-        return "User registered successfully!";
+@PostMapping("/signup")
+public ResponseEntity<Map<String, String>> registerUser(@RequestBody User user){
+    Map<String, String> response = new HashMap<>();
+
+    if (userRepository.existsByEmail(user.getEmail())){
+        response.put("message", "Error: Username is already taken!");
+        return ResponseEntity.badRequest().body(response);
     }
+
+    User newUser = new User(
+            user.getEmail(),
+            encoder.encode(user.getPassword())
+    );
+    userRepository.save(newUser);
+
+    response.put("message", "User registered successfully!");
+    return ResponseEntity.ok(response);
+}
 
 }

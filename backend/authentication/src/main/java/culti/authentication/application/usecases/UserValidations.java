@@ -1,8 +1,9 @@
 package culti.authentication.application.usecases;
 
-import culti.authentication.infrastructure.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import culti.authentication.repository.UserRepository;
 
 import java.util.regex.Pattern;
 
