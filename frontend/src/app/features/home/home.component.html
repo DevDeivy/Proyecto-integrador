@@ -1,17 +1,4 @@
-<header>
-    <nav class="navbar">
-        <img src="assets/img/logo.png" alt="logo culti" class="logoculti">
-        <div class="nav-container">
-            <ul class="nav-container-ul">
-                <li class="nav-container-li"><a [routerLink]="['/home']">Inicio</a></li>
-                <li class="nav-container-li"><a [routerLink]="['/home']">Sobre nosotros</a></li>
-                <li class="nav-container-li"><a [routerLink]="['/home']">Productos</a></li>
-            </ul>
-            <a [routerLink]="['/login']" class="login-btn">Iniciar sesión</a>
-            <a [routerLink]="['/register']" class="login-btn">Registrate</a>
-        </div>
-    </nav>
-</header>
+<app-header/>
 
 <main>
     <section class="hero">
@@ -19,47 +6,7 @@
         <p>Encuentra y adquiere productos agropecuarios de forma rápida y segura, <br>conectando directamente con productores. Reserva o compra al instante sin <br>intermediarios ni complicaciones.</p>
     </section>
 
-    <section id="products" class="section-cards">
-        <article class="card">
-            <h1>🪴</h1>
-            <div class="card-content">
-                <h2>Plantas y semillas</h2>
-                <p>Árboles frutales, plantas medicinales y semillas certificadas.</p>
-            </div>
-        </article>
-        
-        <article class="card card-1">
-            <h1>🐮</h1>
-            <div class="card-content">
-                <h2>Ganado</h2>
-                <p>Bovino, porcino, ovino y aves de corral.</p>
-            </div>
-        </article>
-
-        <article class="card card-2">
-            <h1>🍇</h1>
-            <div class="card-content">
-                <h2>Cultivos frescos</h2>
-                <p>Frutas, verduras, cereales y legumbres de calidad.</p>
-            </div>
-        </article>
-
-        <article class="card card-3">
-            <h1>🐝</h1>
-            <div class="card-content">
-                <h2>Productos agrícolas</h2>
-                <p>Miel, cera, propóleo y otros derivados.</p>
-            </div>
-        </article>
-        
-        <article class="card card-4">
-            <h1>🐾</h1>
-            <div class="card-content">
-                <h2>Forrajes y alimento animal</h2>
-                <p>Pasto, heno, silo y concentrados.</p>
-            </div>
-        </article>
-    </section>
+    <app-card/>
 
     <section class="profile-cards-container">
         <article class="profile-card profile-card-1">
