@@ -34,7 +34,7 @@ export class LoginComponent {
 
     this._servicePostUserLogin.LoginUser(payload).subscribe({
       next: (token: any) => {
-        console.log('token', token);
+        console.log('token ->', token);
       },
       error: (err: any) => {
         console.log('error', err);
