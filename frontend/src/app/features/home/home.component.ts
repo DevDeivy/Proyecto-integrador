@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../../shared/header/header.component';
-import { CardComponent } from '../../shared/molecules/card/card.component';
+import { CardComponent } from '../../shared/card/card.component';
 
 @Component({
   selector: 'app-home',

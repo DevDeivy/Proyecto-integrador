@@ -1,0 +1,94 @@
+.section-letter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #16fb624a;
+    width: 41vh;
+    height: 56vh;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 3vh;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+img {
+    width: 90%;
+    height: 35vh;
+    padding: 19px 0 0 0;
+}
+.details-letter {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 18px 36px;
+    width: 100%;
+}
+
+.details-letter>* {
+    display: flex;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+
+.details>* {
+    padding: 6px 6px 0px 0px;
+}
+
+.like {
+    position: absolute;
+    left: 83%;
+    top: 4%;
+}
+
+.like input[type="radio"] {
+    display: none;
+}
+
+.like label {
+    font-size: 25px;
+    color: #FF6C6C;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.like label:hover,
+.like input[type="radio"]:checked+label {
+    color: red;
+    /* Corazón activo */
+}
+
+label {
+    color: #F9FF7E;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+label:hover {
+    color: rgb(255, 186, 57);
+}
+
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: rgb(255, 186, 57);
+}
