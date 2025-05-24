@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 .wrapper {
   display: flex;
   height: 90vh;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+>>>>>>> feature/email
 }
 
 .login-container {
@@ -12,66 +20,109 @@
 
 .form-box {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   padding: 3rem;
   height: 45rem;
   width: 45rem;
   border-radius: 1rem;
+=======
+  height: 100vh;
+>>>>>>> feature/email
 }
 
 .login-image {
-  width: 60%;
-  height: 100%;
+  width: 50%;
+  background-image: url('../../../../assets/img/cultivo.png');
   background-size: cover;
-  background-position: center center;
-  padding: 3rem;
-  border-radius: 4rem;
+  background-position: center;
+}
+
+.login-form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #000;
+  color: #333;
 }
 
+<<<<<<< HEAD
 .login-container-form {
   display: grid;
   gap: 1.3rem;
+=======
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+>>>>>>> feature/email
 }
 
 .input-group input {
   width: 100%;
   padding: 10px;
-  border: 0.1rem solid #000;
+  border: 1px solid #ccc;
   border-radius: 5px;
-}
-
-.login-button {
-  border: 0.1rem solid #000;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-
-  a {
-    color: #000;
-  }
-}
-
-.register {
-  padding: 2rem;
-}
-
-.remember {
-  accent-color: #000;
 }
 
 .login-options {
   display: flex;
   justify-content: space-between;
+<<<<<<< HEAD
   
   a{
     color: cornflowerblue;
+=======
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.login-options a {
+  text-decoration: none;
+  color: #3791f1;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #00ff2f, #00cf26, #00ad20, #01bd24, #02d92a, #00ff2f);
+  background-size: 300% 100%;
+  animation: colorLinear 5s linear infinite;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes colorLinear {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+>>>>>>> feature/email
   }
 }
 
@@ -81,7 +132,6 @@ h2 {
   justify-content: center;
   width: 100%;
   margin: 20px 0;
-  margin: 0;
 }
 
 .or::before,
@@ -111,6 +161,7 @@ h2 {
   height: 2rem;
 }
 
+<<<<<<< HEAD
 .login {
   text-align: center;
 }
@@ -120,4 +171,24 @@ h2 {
   text-align: center;
   color: red;
   margin-top: .2rem;
+=======
+.register {
+  margin: 2rem;
+  text-align: center;
+}
+
+.register a {
+  text-decoration: none;
+  color: #3791f1;
+}
+
+.redirect{
+  height: 5vh;
+  width: 5vh;
+  position: absolute;
+  left: 96%;
+  padding: 5px;
+  margin-top: 10px;
+  top: 0;
+>>>>>>> feature/email
 }

@@ -1,4 +1,5 @@
 .logoculti{
+<<<<<<< HEAD
     width: 7rem;
     height: auto;
     object-fit: cover;
@@ -20,10 +21,37 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+=======
+    width: 7vh;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-left: 6rem;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    color: #000;
+    padding: 1vh 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-container{
+    display: flex    ;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 6rem;
+>>>>>>> feature/email
 }
 
 .nav-container-ul {
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     gap: 2rem;
 }
@@ -42,4 +70,25 @@
 
 .active{
     color: red;
+=======
+    gap: 2rem;
+}
+
+.nav-container-li a{
+    color: #666666;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#16FB63, #7BFFFD);
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+}
+
+.user>* {
+    height: 25px;
+>>>>>>> feature/email
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { PostUserRegisterService } from '../../../services/post-user-register.service';
@@ -7,11 +8,26 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-login',
   imports: [ReactiveFormsModule, RouterLink, CommonModule],
+=======
+import { Component, inject, Inject } from '@angular/core';
+import { FormControl, FormGroup,  ReactiveFormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+
+import { AuthenticationService } from '../../../core/authentication.service';
+
+@Component({
+  selector: 'app-login',
+  imports: [
+    RouterLink,
+    ReactiveFormsModule,
+  ],
+>>>>>>> feature/email
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
 
+<<<<<<< HEAD
   errorLogin: boolean = false;
 
   login = new FormGroup({
@@ -47,3 +63,26 @@ export class LoginComponent {
     });
   }
 }
+=======
+  authService: AuthenticationService = inject(AuthenticationService);
+
+  login = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl(''),
+  });
+
+
+  onLoginSubmit(){
+    this.authService.loginUser(this.login.value).subscribe({
+      next: token => {
+        console.log( token );
+      },
+      error: e => {
+        console.log(e);
+      }
+    })
+
+  }
+  
+}
+>>>>>>> feature/email
