@@ -10,10 +10,25 @@
   height: 100vh;
 }
 
+<<<<<<< HEAD
+.gap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.register-image {
+  width: 60%;
+  background-size: cover;
+  background-position: center center;
+  padding: 3rem;
+  border-radius: 4rem;
+=======
 .register-image {
   width: 50%;
   background-size: cover;
   background-position: center;
+>>>>>>> feature/email
 }
 
 .register-form {
@@ -26,12 +41,23 @@
 }
 
 .form-box {
+<<<<<<< HEAD
+  display: flex;
+  flex-direction: column;
+  background: #8dffb38d;
+  padding: 3rem;
+  height: 45rem;
+  width: 40rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #000;
+=======
   width: 100%;
   max-width: 400px;
   background: white;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+>>>>>>> feature/email
 }
 
 h2 {
@@ -58,6 +84,17 @@ h2 {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
+.register-button {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 0.1rem solid #000;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.login {
+=======
 /* Opciones de registro */
 .register-options {
   display: flex;
@@ -94,6 +131,7 @@ h2 {
 
 .login {
   margin: 2rem;
+>>>>>>> feature/email
   text-align: center;
 }
 .login a {
