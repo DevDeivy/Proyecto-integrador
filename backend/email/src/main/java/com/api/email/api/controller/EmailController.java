@@ -1,5 +1,7 @@
-package com.api.email;
+package com.api.email.api.controller;
 
+import com.api.email.infrastructure.services.SendMessageService;
+import com.api.email.api.dto.EmailDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
