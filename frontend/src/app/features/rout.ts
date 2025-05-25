@@ -2,14 +2,9 @@ import { Routes } from "@angular/router";
 import { LoginComponent } from "./auth/login/login.component";
 import { RegisterComponent } from "./auth/register/register.component";
 import { HomeComponent } from "./home/home.component";
-<<<<<<< HEAD
-import { FgpasswordComponent } from "./auth/fgpassword/fgpassword.component";
-import { Component } from "@angular/core";
-=======
 import { LetterProductComponent } from "./letter-product/letter-product.component";
 import { ListProductsComponent } from "./list-products/list-products.component";
 import { FgpasswordComponent } from "./auth/fgpassword/fgpassword.component";
->>>>>>> feature/email
 import { FgcodepasswordComponent } from "./auth/fgcodepassword/fgcodepassword.component";
 import { NewpasswordComponent } from "./auth/newpassword/newpassword.component";
 
@@ -23,10 +18,6 @@ export const rout: Routes = [
     {
         path: "list-products",
         component: ListProductsComponent
-    },
-    {
-        path: "letter-product",
-        component: LetterProductComponent
     },
     {
         path: "home",

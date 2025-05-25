@@ -1,11 +1,14 @@
-<section id="products" class="section-cards">
+<div class="wrapper">
 
-    <article class="card" *ngFor="let card of cards; index as i" [ngClass]="'card-' + i">
-        <h1>{{ card.icon }}</h1>
-        <div>
-            <h2>{{ card.title }}</h2>
-            <p>{{ card.description }}</p>
-        </div>
-    </article>
-
-</section>
+    <section id="products" class="section-cards">
+        
+        <article class="card" *ngFor="let card of cards; index as i" [ngClass]="'card-' + i">
+            <h1>{{ card.icon }}</h1>
+            <div>
+                <h2>{{ card.title }}</h2>
+                <p>{{ card.description }}</p>
+            </div>
+        </article>
+        
+    </section>
+</div>

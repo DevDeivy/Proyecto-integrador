@@ -1,4 +1,4 @@
-package com.api.email;
+package com.api.email.api.dto;
 
 public class EmailDTO {
     private String to;

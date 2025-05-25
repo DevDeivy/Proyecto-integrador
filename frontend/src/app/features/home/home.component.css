@@ -3,14 +3,22 @@
     padding: 1rem 0;
 
     h1{
-    font-size: 5rem;
-    color: #000;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #555;
     }
 
     p{
         font-size: 1.6rem;
-        color: #000;
+        color: #555;
+        margin: 2rem 0;
     }
+}
+
+.btn{
+    padding: .8rem 2rem; 
+    background: linear-gradient(to right, #16FB63, #7BFFFD);
+    border-radius: 1rem;
 }
 
 .profile-cards-container {

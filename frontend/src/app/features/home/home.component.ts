@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-import { RouterLink, RouterLinkActive } from '@angular/router';
-=======
-import { HeaderComponent } from '../../shared/header/header.component';
 import { CardComponent } from '../../shared/card/card.component';
->>>>>>> feature/email
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   imports: [
-    HeaderComponent,
     CardComponent,
+    RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
