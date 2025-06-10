@@ -5,7 +5,7 @@
     align-items: center;
     background-color: #16fb624a;
     width: 41vh;
-    height: 56vh;
+    height: auto;
     border-radius: 10px;
     font-size: 14px;
     margin: 3vh;
@@ -63,7 +63,6 @@ img {
 .like label:hover,
 .like input[type="radio"]:checked+label {
     color: red;
-    /* Corazón activo */
 }
 
 label {

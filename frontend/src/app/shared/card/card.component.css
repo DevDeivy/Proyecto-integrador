@@ -39,3 +39,33 @@
     grid-column: 2/4;
     width: 100%;
 }
+
+@media (max-width: 1024px) {
+
+    .pd{
+        padding: 0 7rem;
+    }
+
+  .section-cards {
+    gap: 2rem;
+    margin: 5rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-4 {
+    background-color:#9EEEE7 ;
+    grid-column: 2/4;
+    width: 30rem;
+}
+
+.card {
+    width: 30rem;
+    height: 25rem;  
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+}

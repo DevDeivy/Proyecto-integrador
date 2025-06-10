@@ -82,3 +82,48 @@
     height: 20rem;
     margin: 3rem 0 0 0;
 }
+
+@media (max-width: 1024px) {
+    .profile-cards-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .profile-cards-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        padding: 1rem;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .profile-info {
+            text-align: left;
+            padding: 1rem 0;
+        }
+    }
+
+    .btn {
+        display: inline-block;
+        font-size: 1.4rem;
+    }
+
+    .footer {
+        padding: 2rem;
+        height: auto;
+        text-align: center;
+    }
+}

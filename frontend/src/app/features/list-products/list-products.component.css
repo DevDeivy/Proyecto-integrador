@@ -42,3 +42,50 @@ display: grid
     gap: 0rem;
     margin-top: 20px;
 }
+
+@media (max-width: 1024px) {
+  .section-search {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .item-search,
+  .input-wrapper input {
+    width: 100%;
+    max-width: none;
+    margin: 10px 0;
+  }
+
+  .input-icon {
+    left: 95%;
+    transform: translate(-100%, -50%);
+  }
+
+  .Section-letters {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-icon {
+    width: 20px;
+    height: 20px;
+    left: 90%;
+  }
+
+  .Section-letters {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .item-search {
+    font-size: 14px;
+    padding: 1rem;
+  }
+
+  .input-wrapper input {
+    font-size: 14px;
+  }
+}
