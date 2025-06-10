@@ -18,20 +18,31 @@ import java.util.Date;
 
 @Component
 public class JwtUtil {
+
     @Value("${jwt.secret}")
     private String jwtSecret;
+
     @Value("${jwt.expiration}")
     private int jwtExpirationMs;
+
     private static final Logger logger = LoggerFactory.getLogger(JwtUtil.class);
+
     private SecretKey key;
 
     @PostConstruct
-    public void init(){
+    public void init() {
         this.key = Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
     }
 
-    // Generate JWT token
-    public String generateToken(String email){
+    void setJwtSecret(String jwtSecret) {
+        this.jwtSecret = jwtSecret;
+    }
+
+    void setJwtExpirationMs(int jwtExpirationMs) {
+        this.jwtExpirationMs = jwtExpirationMs;
+    }
+
+    public String generateToken(String email) {
         return Jwts.builder()
                 .setSubject(email)
                 .setIssuedAt(new Date())
@@ -40,8 +51,7 @@ public class JwtUtil {
                 .compact();
     }
 
-    // Generate username from JWT token
-    public String  getUsernameFromToken(String token){
+    public String getUsernameFromToken(String token) {
         return Jwts.parserBuilder()
                 .setSigningKey(key).build()
                 .parseClaimsJws(token)
@@ -49,7 +59,6 @@ public class JwtUtil {
                 .getSubject();
     }
 
-    // validate JWT token
     public boolean validateJwtToken(String token) {
         try {
             Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token);
